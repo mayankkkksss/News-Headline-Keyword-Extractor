@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Headline Keyword Extractor</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#f4f6f9;
+            padding:20px;
+        }
+
+        .container{
+            width:100%;
+            max-width:700px;
+            background:white;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:20px;
+        }
+
+        textarea{
+            width:100%;
+            height:120px;
+            padding:12px;
+            resize:none;
+            border:1px solid #ccc;
+            border-radius:8px;
+            font-size:16px;
+        }
+
+        button{
+            margin-top:15px;
+            width:100%;
+            padding:12px;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        .result{
+            margin-top:25px;
+        }
+
+        .result h3{
+            margin-bottom:10px;
+        }
+
+        .keywords{
+            min-height:60px;
+            border:1px solid #ddd;
+            border-radius:8px;
+            padding:12px;
+            background:#fafafa;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form method="post">
+        <h1>News Headline Keyword Extractor</h1>
+
+        <textarea
+            placeholder="Enter a news headline..."
+            name="headline_text"
+            id="headline">
+        </textarea>
+
+        <button id="extractBtn">
+            Extract Keywords
+        </button>
+
+        <div class="result">
+            <h3>Root Keywords</h3>
+            <div class="keywords" id="keywords" >
+                {{result}}
+            </div>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>
