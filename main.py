@@ -1,10 +1,14 @@
 import nltk
+import os
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from flask import Flask, request, render_template
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+NLTK_DATA_DIR = os.path.join(BASE_DIR, "nltk_data")
 
+nltk.data.path.append(NLTK_DATA_DIR)
 
 app = Flask(__name__)
 
@@ -26,5 +30,9 @@ def homepage():
 
     return render_template("index.html")
 
+@app.route("/debug")
+def debug():
+    return str(nltk.data.path)
+
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run()
