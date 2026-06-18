@@ -1,8 +1,5 @@
 import nltk
-nltk.download("punkt")
-nltk.download("punkt_tab")
 from nltk.tokenize import word_tokenize
-nltk.download("stopwords")
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from flask import Flask, request, render_template
