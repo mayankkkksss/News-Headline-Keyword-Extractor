@@ -105,7 +105,7 @@ http://127.0.0.1:5000
 
 Deployed Application:
 
-[Add Your Vercel URL Here]
+[https://news-headline-keyword-extractor.vercel.app/]
 
 ---
 
@@ -125,16 +125,6 @@ improv
 healthcar
 system
 ```
-
----
-
-## Future Enhancements
-
-* Lemmatization support
-* Keyword frequency analysis
-* Named Entity Recognition (NER)
-* Support for multiple headlines
-* Export extracted keywords
 
 ---
 
