@@ -105,7 +105,7 @@ http://127.0.0.1:5000
 
 Deployed Application:
 
-[https://news-headline-keyword-extractor.vercel.app/]
+https://news-headline-keyword-extractor.vercel.app
 
 ---
 
