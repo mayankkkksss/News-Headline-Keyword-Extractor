@@ -131,3 +131,5 @@ system
 ## Author
 
 Developed as part of an NLP internship project using Flask and NLTK.
+
+**This README.md is AI-generated; perception are not.**
